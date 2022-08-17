@@ -1,0 +1,204 @@
+---
+format:
+  revealjs:
+    css: assets/css/style.css
+    logo: assets/dsi.png
+---
+
+# Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png" background-opacity=".6" style="width: 1000px"}
+
+Fall 2022 Literate Programming Workshops
+
+Heidi Steiner, PSM \| Data Science Educator
+
+::: footnote
+Content is a mixture of \[RStudio Education materials\](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by \[Desirée De Leon\](https://desiree.rbind.io/) and \[Allison Horst\](https://www.allisonhorst.com/), CC-BY-NC-ND.
+:::
+
+## Getting Started `r fontawesome::fa("pause-circle")` {background-image="assets/geometryAqua.png\")"}
+
+-   About me
+
+-   Quick intros
+
+::: notes
+Add for hands-on
+
+-   Check download
+
+-   Tour of RStudio IDE
+:::
+
+## Quarto
+
+> Quarto® is an open-source scientific and technical publishing system built to dramatically improve the **process of creating** and collaborating
+
+![](images/horst_quarto_schematic.png){fig-alt="Graphic showing R, Python, Julia, and Observable languages flowing to Quarto and then on to html, PDF, and MS Word documents"}
+
+::: notes
+I think it's totally appropriate to stop here and ask how folks feel about the term open source
+:::
+
+## 
+
+Quarto documents, and other **"literate programming"** documents such as `.rmd` and `.ipynb`, include code, prose, and results in a single human-readable file
+
+![](images/rmarkdown_wizards.png){style="margin-top: -20px;" width="2494"}
+
+::: notes
+same here! stop and ask folks how they feel about the term literate programming
+:::
+
+## Change your mental model
+
+::: columns
+::: {.column style="width: \"50%;"}
+Source ↔ output
+
+![](images/haba-elise.jpg){fig-alt="Small plastic doll of a white girl in a pink and green outfit"}
+:::
+
+::: {.column style="width"}
+Source → output
+
+![](images/doll.png){fig-alt="plastic doll with textile clothing, hair of a white girl in pink and green outfit"}
+:::
+:::
+
+## Same ~~doll~~ source, different occasions
+
+[![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits"}](https://www.americangirl.com/shop/c/welliewishers)
+
+## Keep your happy place
+
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395"}
+
+## Keep your happy place
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="395"}
+
+## Anatomy of a `.qmd`
+
+::: columns
+::: {.column style="width: 20%"}
+1.  Metadata
+2.  Markup
+3.  Code
+4.  Output
+:::
+
+::: {.column style="width: 80%"}
+![](images/anatomy.jpeg){fig-alt="illustration of a document with arrows to include metadata, text, code, and output" fig-align="right"}
+:::
+:::
+
+## Metadata: YAML
+
+::: columns
+::: {.column style="width: 50%"}
+"YAML Ain't Markup Language"
+
+``` {.yaml execute="FALSE"}
+---
+
+key: value
+
+---
+```
+
+</br>
+
+-   Save options in your YAML
+
+-   `format: revealjs`
+
+-   re-render often!
+:::
+
+::: {.column style="width: 50%"}
+![](images/orchestra.jpg){fig-alt="the back of an illustrated orchestra conductor" fig-align="right"}
+:::
+:::
+
+## Markdown (...is a Markup language)
+
+Some example Markdown text:
+
+``` markdown
+# Heading 1
+This is a sentence with some **bold text**, some *italic text* and an 
+![image](image.png){fig-alt="Alt text for this image"}.
+```
+
+</br>
+
+Check out https://commonmark.org/help/tutorial/ for a tutorial on common markup languages!
+
+## Code
+
+::: columns
+::: {.column style="width: 60%"}
+    ```{{r}}
+    library(dplyr)
+    mtcars |> 
+      group_by(cyl) |> 
+      summarize(mean = mean(mpg))
+    ```
+
+</br>
+
+    ```{{python}}
+    from siuba import _, group_by, summarize
+    from siuba.data import mtcars
+    (mtcars
+      >> group_by(_.cyl)
+      >> summarize(avg_mpg = _.mpg.mean())
+      )
+    ```
+:::
+
+::: {.column style="width: 35%; padding-left: 50px;"}
+    ```{{ojs}}
+    {
+      let sum = 0;
+      for (let i = 0; i < 10; ++i) {
+        sum += i;
+      }
+      return sum;
+    }
+    ```
+
+</br>
+
+    ```{{julia}}
+    using Plots
+
+    plot(sin, 
+         x->sin(2x), 
+         0, 
+         2π, 
+         leg=false, 
+         fill=(0,:lavender))
+    ```
+:::
+:::
+
+## Nearly limitless output formats
+
+</br>
+
+![](images/knitOutput.png){width="850"}
+
+## Render and Send 'er `r fontawesome::fa("paper-plane")`
+
+In general, if it renders, it's safe to send!
+
+[![](images/netlify-drop.png){fig-alt="screenshot of netlify.app's quick drop page"}](app.netlify.com/drop)
+
+## Summary
+
+-   Quarto is a "batteries included" command line tool that shares syntax across output types and languages and can be used within many editors
+
+-   Learn about revealjs presentations from this [slidedeck](https://github.com/hidyverse/quarto-reporting)
+
+![](images/qmd_render_schema.png){fig-alt="illustration of quarto's rendering process"}
