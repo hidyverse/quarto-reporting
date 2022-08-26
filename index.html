@@ -6,16 +6,16 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.0.38">
-
-  <title>index</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
-  <style>
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+<title>index</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+<link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+<style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -86,14 +86,32 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
+<link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+<link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+<link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+<link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+<link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+<style type="text/css">
 
   .callout {
     margin-top: 1em;
@@ -290,7 +308,7 @@
   }
 
   </style>
-  <style type="text/css">
+<style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
       overflow: auto;
@@ -377,34 +395,32 @@
       margin-right: 0; 
     }
   </style>
+<script src="index_files/libs/kePrint-0.0.1/kePrint.js"></script><link href="index_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 
-<section>
-<section id="quarto-for-reproducible-reporting" class="title-slide slide level1 center" data-background-image="assets/geometryClouds.png" data-background-opacity=".6" style="width: 1000px">
-<h1>Quarto for Reproducible Reporting</h1>
+<section class="slide level2"><div class="cell">
+
+</div>
+</section><section><section id="quarto-for-reproducible-reporting" class="title-slide slide level1 center" data-background-image="assets/geometryClouds.png" data-background-opacity=".6" style="width: 1000px"><h1>Quarto for Reproducible Reporting</h1>
 <p>Fall 2022 Literate Programming Workshops</p>
 <p>Heidi Steiner, PSM | Data Science Educator</p>
-<div class="footnote">
+<div class="footer">
 <p>Content is a mixture of [RStudio Education materials](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by [Desirée De Leon](https://desiree.rbind.io/) and [Allison Horst](https://www.allisonhorst.com/), CC-BY-NC-ND.</p>
 </div>
-</section>
-<section id="getting-started" class="slide level2" data-background-image="assets/geometryAqua.png&quot;)">
-<h2>Getting Started <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-16 328c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v160zm112 0c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v160z"></path></svg></h2>
+</section><section id="section" class="slide level2"><h2><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg></h2>
+<p>I am a health scientist and NOT a computer scientist!</p>
+<p>I am very much still learning Quarto, RMarkdown, R, etc.</p>
+<aside class="notes"><p>Add “getting started” slide for hands-on</p>
 <ul>
-<li><p>About me</p></li>
-<li><p>Quick intros</p></li>
-</ul>
-<aside class="notes">
-<p>Add for hands-on</p>
-<ul>
-<li><p>Check download</p></li>
-<li><p>Tour of RStudio IDE</p></li>
-</ul>
-<style type="text/css">
+<li>About me</li>
+<li>Quick intros</li>
+<li>Check download</li>
+<li>Tour of RStudio IDE</li>
+</ul><style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
           clip: rect(1px, 1px, 1px, 1px);
@@ -414,16 +430,13 @@
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside>
-</section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
+      }</style></aside></section><section id="quarto" class="slide level2"><h2>Quarto</h2>
 <blockquote>
-<p>Quarto® is an open-source scientific and technical publishing system built to dramatically improve the <strong>process of creating</strong> and collaborating</p>
+<p>Quarto® is an open-source scientific and technical publishing system built to dramatically improve the process of creating and collaborating</p>
 </blockquote>
 <p><img data-src="images/horst_quarto_schematic.png" alt="Graphic showing R, Python, Julia, and Observable languages flowing to Quarto and then on to html, PDF, and MS Word documents"></p>
-<aside class="notes">
-<p>I think it’s totally appropriate to stop here and ask how folks feel about the term open source</p>
+<aside class="notes"><p>lowering the activation energy to reproducible reporting in MANY ways</p>
+<p>I think it’s totally appropriate to stop here and ask how folks feel about the term open/reproducible</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -434,14 +447,10 @@
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
+      }</style></aside></section><section id="section-1" class="slide level2"><h2></h2>
 <p>Quarto documents, and other <strong>“literate programming”</strong> documents such as <code>.rmd</code> and <code>.ipynb</code>, include code, prose, and results in a single human-readable file</p>
-<p><img data-src="images/rmarkdown_wizards.png" style="margin-top: -20px;" width="2494"></p>
-<aside class="notes">
-<p>same here! stop and ask folks how they feel about the term literate programming</p>
+<p><img data-src="images/rmarkdown_wizards.png" style="margin-top: -10px;" width="2494"></p>
+<aside class="notes"><p>same here! stop and ask folks how they feel about the term literate programming</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -452,10 +461,19 @@
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside>
-</section>
-<section id="change-your-mental-model" class="slide level2">
-<h2>Change your mental model</h2>
+      }</style></aside></section><section id="change-your-mental-model" class="slide level2"><h2>Change your mental model</h2>
+
+<img data-src="images/drakeMeme.jpeg" alt="drake meme shaking head at copy/paste and encouraging source -> output models" class="r-stretch"></section><section id="change-your-mental-model-1" class="slide level2"><h2>Change your mental model</h2>
+<div class="columns">
+<div class="column" style="width: &quot;50%;">
+<p>Source ↔︎ output</p>
+<p><img data-src="images/word.png" alt="screenshot of blank word.docx" width="1062"></p>
+</div><div class="column" style="width">
+<p>Source → output</p>
+<p><img data-src="images/Screen%20Shot%202022-08-26%20at%209.11.15%20AM.png"></p>
+</div>
+</div>
+</section><section id="change-your-mental-model-2" class="slide level2"><h2>Change your mental model</h2>
 <div class="columns">
 <div class="column" style="width: &quot;50%;">
 <p>Source ↔︎ output</p>
@@ -465,40 +483,28 @@
 <p><img data-src="images/doll.png" alt="plastic doll with textile clothing, hair of a white girl in pink and green outfit"></p>
 </div>
 </div>
-</section>
-<section id="same-doll-source-different-occasions" class="slide level2">
-<h2>Same <del>doll</del> source, different occasions</h2>
+</section><section id="same-doll-different-occasions" class="slide level2"><h2>Same doll, different occasions</h2>
 
-<img data-src="images/reproducibility_dolls.png" alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" class="r-stretch quarto-figure-center"></section>
-<section id="keep-your-happy-place" class="slide level2">
-<h2>Keep your happy place</h2>
+<img data-src="images/reproducibility_dolls.png" alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" class="r-stretch quarto-figure-center"></section><section id="same-doll-source-different-occasions" class="slide level2"><h2>Same <del>doll</del> source, different occasions</h2>
 
-<img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395" class="r-stretch"></section>
-<section id="keep-your-happy-place-1" class="slide level2">
-<h2>Keep your happy place</h2>
-
-<img data-src="https://quarto.org/docs/computations/images/python-vscode.png" alt="A screenshot of a Quarto document rendered inside VSCode" width="395" class="r-stretch"></section>
-<section id="anatomy-of-a-.qmd" class="slide level2">
-<h2>Anatomy of a <code>.qmd</code></h2>
+<img data-src="images/reproducibility_dolls.png" alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" class="r-stretch"></section><section id="anatomy-of-a-.qmd" class="slide level2"><h2>Anatomy of a <code>.qmd</code>
+</h2>
 <div class="columns">
 <div class="column" style="width: 20%">
 <ol type="1">
-<li>Metadata</li>
-<li>Markup</li>
-<li>Code</li>
-<li>Output</li>
+<li class="fragment">Metadata</li>
+<li class="fragment">Markup</li>
+<li class="fragment">Code</li>
+<li class="fragment">Output</li>
 </ol>
 </div><div class="column" style="width: 80%">
 <div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="images/anatomy.jpeg" alt="illustration of a document with arrows to include metadata, text, code, and output"></p>
+<figure><p><img data-src="images/anatomy.jpeg" alt="illustration of a document with arrows to include metadata, text, code, and output"></p>
 </figure>
 </div>
 </div>
 </div>
-</section>
-<section id="metadata-yaml" class="slide level2">
-<h2>Metadata: YAML</h2>
+</section><section id="metadata-yaml" class="slide level2"><h2>Metadata: YAML</h2>
 <div class="columns">
 <div class="column" style="width: 50%">
 <p>“YAML Ain’t Markup Language”</p>
@@ -507,32 +513,30 @@
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">key</span><span class="kw">:</span><span class="at"> value</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
+<p></p>
 <ul>
-<li><p>Save options in your YAML</p></li>
-<li><p><code>format: revealjs</code></p></li>
-<li><p>re-render often!</p></li>
+<li class="fragment"><p>Save options in your YAML</p></li>
+<li class="fragment"><p><code>format: revealjs</code></p></li>
+<li class="fragment"><p>re-render often!</p></li>
 </ul>
 </div><div class="column" style="width: 50%">
 <div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="images/orchestra.jpg" alt="the back of an illustrated orchestra conductor"></p>
+<figure><p><img data-src="images/orchestra.jpg" alt="the back of an illustrated orchestra conductor"></p>
 </figure>
 </div>
 </div>
 </div>
-</section>
-<section id="markdown-is-a-markup-language" class="slide level2">
-<h2>Markdown (…is a Markup language)</h2>
+</section><section id="markdown-is-a-markup-language" class="slide level2"><h2>Markdown (…is a Markup language)</h2>
 <p>Some example Markdown text:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu"># Heading 1</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>This is a sentence with some **bold text**, some *italic text* and an </span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="al">![image](image.png)</span>{fig-alt="Alt text for this image"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
+<p></p>
 <p>Check out https://commonmark.org/help/tutorial/ for a tutorial on common markup languages!</p>
-</section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
+<div class="{notes}">
+<p>stop and show visual editor here</p>
+</div>
+</section><section id="code" class="slide level2"><h2>Code</h2>
 <div class="columns">
 <div class="column" style="width: 60%">
 <div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
@@ -541,7 +545,7 @@
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(cyl) <span class="sc">|&gt;</span> </span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(mpg))</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
+<p></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> siuba <span class="im">import</span> _, group_by, summarize</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> siuba.data <span class="im">import</span> mtcars</span>
@@ -560,7 +564,7 @@
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> sum<span class="op">;</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="vs">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
+<p></p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{julia}</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>using Plots</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -573,49 +577,195 @@
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-</section>
-<section id="nearly-limitless-output-formats" class="slide level2">
-<h2>Nearly limitless output formats</h2>
-<p><br></p>
+</section><section id="keep-your-happy-place" class="slide level2"><h2>Keep your happy place</h2>
 
-<img data-src="images/knitOutput.png" width="850" class="r-stretch"></section>
-<section id="render-and-send-er" class="slide level2">
-<h2>Render and Send ’er <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg></h2>
+<img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395" class="r-stretch"></section><section id="keep-your-happy-place-1" class="slide level2"><h2>Keep your happy place</h2>
+
+<img data-src="https://quarto.org/docs/computations/images/python-vscode.png" alt="A screenshot of a Quarto document rendered inside VSCode" width="395" class="r-stretch"></section><section id="consort-diagrams" class="slide level2"><h2>Consort Diagrams</h2>
+<div class="columns">
+<div class="column" style="width:30%">
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 17px; margin-left: auto; margin-right: auto;">
+<thead><tr>
+<th style="text-align:right;"> trialno </th>
+   <th style="text-align:left;"> exc </th>
+   <th style="text-align:left;"> arm </th>
+   <th style="text-align:left;"> fow1 </th>
+   <th style="text-align:left;"> fow2 </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:right;"> 1086 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Conc </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> 1418 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Seq </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> 1502 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Conc </td>
+   <td style="text-align:left;"> Death </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> 1846 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Conc </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> 1303 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Conc </td>
+   <td style="text-align:left;"> Death </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+<tr>
+<td style="text-align:right;"> 1838 </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> Seq </td>
+   <td style="text-align:left;"> NA </td>
+   <td style="text-align:left;"> NA </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div><div class="column" style="width: 70%; margin-top: -25px; margin-right: -85px; margin-left: -20px;">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure><p><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="787"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="nearly-limitless-output-formats" class="slide level2 center middle"><h2>Nearly limitless output formats</h2>
+<p></p>
+
+<img data-src="images/knitOutput.png" width="850" class="r-stretch"></section><section id="but-you-dont-have-to-decide-right-now" class="slide level2 center middle"><h2>…but you don’t have to decide right now!</h2>
+<p></p>
+<ul>
+<li class="fragment"><code>quarto create-project --type=website</code></li>
+</ul>
+<p></p>
+<ul>
+<li class="fragment">website -&gt; html book <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M448 358.4V25.6c0-16-9.6-25.6-25.6-25.6H96C41.6 0 0 41.6 0 96v320c0 54.4 41.6 96 96 96h326.4c12.8 0 25.6-9.6 25.6-25.6v-16q0-9.6-9.6-19.2c-3.2-16-3.2-60.8 0-73.6q9.6-4.8 9.6-19.2zM144 168a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8v48a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8zm236.8 280H96c-19.2 0-32-12.8-32-32s16-32 32-32h284.8z"></path></svg>
+</li>
+</ul>
+<aside class="notes"><p>Then show changing YAML from a website looking doc to a book looking doc with navbar top -&gt; sidebar contents</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside></section><section id="and-you-dont-have-to-choose-just-one" class="slide level2 center middle"><h2>…and you don’t have to choose just one!</h2>
+<div class="sourceCode" id="cb7" data-execute="FALSE"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Housing Prices"</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mine Çetinkaya-Rundel"</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> pygments</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="at">    </span><span class="fu">html-math-method</span><span class="kw">:</span><span class="at"> katex</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a><span class="at">    </span><span class="fu">geometry</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb7-11"><a href="#cb7-11"></a><span class="at">      </span><span class="kw">-</span><span class="at"> top=30mm</span></span>
+<span id="cb7-12"><a href="#cb7-12"></a><span class="at">      </span><span class="kw">-</span><span class="at"> left=30mm</span></span>
+<span id="cb7-13"><a href="#cb7-13"></a><span class="at">  </span><span class="fu">docx</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="easier-collaboration-with-.docx-collaborators" class="slide level2"><h2>Easier collaboration with <code>.docx</code> collaborators</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img data-src="images/quartoWord.png" alt="screenshot of a quarto document knit to word showing a table of contents"></p>
+</div><div class="column" style="width:40%;">
+<div class="sourceCode" id="cb8" data-execute="FALSE"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Demo"</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Appsilon"</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"2022-5-24"</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="at">    </span><span class="fu">docx</span><span class="kw">:</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="at">        </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a><span class="at">        </span><span class="fu">toc-depth</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb8-9"><a href="#cb8-9"></a><span class="at">        </span><span class="fu">toc-title</span><span class="kw">:</span><span class="at"> Table of contents</span></span>
+<span id="cb8-10"><a href="#cb8-10"></a><span class="at">        </span><span class="fu">number-sections</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-11"><a href="#cb8-11"></a><span class="at">        </span><span class="fu">highlight-style</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb8-12"><a href="#cb8-12"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><span class="citation" data-cites="radecic2022">(<a href="#/ref-radecic2022" role="doc-biblioref" onclick="return false;">Radečić 2022</a>)</span></p>
+</div>
+</div>
+</section><section id="render-and-send-er" class="slide level2"><h2>Render and Send ’er <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg>
+</h2>
 <p>In general, if it renders, it’s safe to send!</p>
 
-<img data-src="images/netlify-drop.png" alt="screenshot of netlify.app's quick drop page" class="r-stretch quarto-figure-center"></section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
+<img data-src="images/Screen%20Shot%202022-08-26%20at%2012.14.25%20PM.png" alt="screenshot of UArizona RStudio Connect service" class="r-stretch"></section><section id="and-beyond" class="slide level2" data-background-image="images/diveInQuarto.png," data-background-size="contain&quot;,"><h2>And Beyond!</h2>
+</section><section id="css-and-scss" class="slide level2"><h2>CSS and SCSS</h2>
+<p>CSS</p>
+<div class="sourceCode" id="cb9" data-echo="fenced"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">.body</span> {</span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="kw">font</span>: <span class="dv">100</span><span class="dt">%</span> Helvetica<span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="kw">color</span>: <span class="cn">#333</span><span class="op">;</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>scss = CSS +</p>
+<div class="sourceCode" id="cb10" data-echo="fenced"><pre class="sourceCode numberSource scss number-lines code-with-copy"><code class="sourceCode scss"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">/*-- scss:defaults --*/</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="va">$font-stack</span>: Helvetica<span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="va">$primary-color</span>: <span class="cn">#333</span><span class="op">;</span></span>
+<span id="cb10-5"><a href="#cb10-5"></a></span>
+<span id="cb10-6"><a href="#cb10-6"></a></span>
+<span id="cb10-7"><a href="#cb10-7"></a><span class="co">/*-- scss:rules --*/</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a></span>
+<span id="cb10-9"><a href="#cb10-9"></a><span class="fu">.body</span> {</span>
+<span id="cb10-10"><a href="#cb10-10"></a>  <span class="kw">font</span>: <span class="dv">100</span><span class="dt">%</span> <span class="va">$font-stack</span><span class="op">;</span></span>
+<span id="cb10-11"><a href="#cb10-11"></a>  <span class="kw">color</span>: <span class="va">$primary-color</span><span class="op">;</span></span>
+<span id="cb10-12"><a href="#cb10-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="images" class="slide level2 middle center"><h2>Images</h2>
+<p>Markdown is all fun and games until you need to resize some photos!</p>
+<p>Watch this <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></p>
+</section><section id="jupyter" class="slide level2"><h2>Jupyter</h2>
+<p>Step up your <code>.ipynb</code> game with <code>quarto render my_notebook.ipynb</code></p>
+<div class="{footer}">
+<p>https://towardsdatascience.com/quarto-a-game-changer-for-rendering-jupyter-notebooks-826c885a531f</p>
+</div>
+</section><section id="awesome-quarto" class="slide level2"><h2>Awesome Quarto</h2>
+<p><img data-src="images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png"><a href="https://github.com/mcanouil/awesome-quarto">Curated list of Quarto docs, talks, tools, examples &amp; articles</a></p>
+</section><section id="summary" class="slide level2 smaller scrollable"><h2>Summary</h2>
 <ul>
-<li><p>Quarto is a “batteries included” command line tool that shares syntax across output types and languages and can be used within many editors</p></li>
-<li><p>Learn about revealjs presentations from this <a href="https://github.com/hidyverse/quarto-reporting">slidedeck</a></p></li>
+<li class="fragment"><p>Quarto is a “batteries included” command line tool that shares syntax across output types and languages and can be used within many editors</p></li>
+<li class="fragment"><p>Learn about revealjs presentations from this <a href="https://github.com/hidyverse/quarto-reporting">slidedeck</a></p></li>
 </ul>
 <p><img data-src="images/qmd_render_schema.png" alt="illustration of quarto's rendering process"></p>
 <p><img src="assets/dsi.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-radecic2022" class="csl-entry" role="doc-biblioentry">
+Radečić, Dario. 2022. <span>“R Quarto Tutorial <span></span> How to Create Interactive Markdown Documents | r-Bloggers.”</span> <a href="https://www.r-bloggers.com/2022/07/r-quarto-tutorial-how-to-create-interactive-markdown-documents/">https://www.r-bloggers.com/2022/07/r-quarto-tutorial-how-to-create-interactive-markdown-documents/</a>.
+</div>
+</div>
 </section></section>
-    </div>
+</div>
   </div>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
-  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-
-  <script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="index_files/libs/revealjs/dist/reveal.js"></script><!-- reveal.js plugins --><script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script><script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script><script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script><script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script><script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script><script src="index_files/libs/revealjs/plugin/notes/notes.js"></script><script src="index_files/libs/revealjs/plugin/search/search.js"></script><script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script><script src="index_files/libs/revealjs/plugin/math/math.js"></script><script>window.define = window.backupDefine; window.backupDefine = undefined;</script><script>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
@@ -806,9 +956,7 @@
           RevealZoom
         ]
       });
-    </script>
-    
-    <script>
+    </script><script>
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
       // slide changes (different for each slide format).
@@ -847,9 +995,7 @@
         }
 
       })();
-    </script>
-
-    <script id="quarto-html-after-body" type="application/javascript">
+    </script><script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -945,6 +1091,6 @@
       }
     });
     </script>
-    
+
 
 </body></html>

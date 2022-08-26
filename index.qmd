@@ -1,9 +1,18 @@
 ---
 format:
   revealjs:
-    css: assets/css/style.css
+    theme: [default, assets/custom.scss]
     logo: assets/dsi.png
+    code-link: true
+    incremental: true
+bibliography: references.bib
 ---
+
+```{r setup}
+
+library(knitr)
+library(kableExtra)
+```
 
 # Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png" background-opacity=".6" style="width: 1000px"}
 
@@ -11,42 +20,65 @@ Fall 2022 Literate Programming Workshops
 
 Heidi Steiner, PSM \| Data Science Educator
 
-::: footnote
+::: footer
 Content is a mixture of \[RStudio Education materials\](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by \[Desirée De Leon\](https://desiree.rbind.io/) and \[Allison Horst\](https://www.allisonhorst.com/), CC-BY-NC-ND.
 :::
 
-## Getting Started `r fontawesome::fa("pause-circle")` {background-image="assets/geometryAqua.png\")"}
+## `r fontawesome::fa("exclamation-triangle")`
 
--   About me
+I am a health scientist and NOT a computer scientist!
 
--   Quick intros
+I am very much still learning Quarto, RMarkdown, R, etc.
 
 ::: notes
-Add for hands-on
+Add "getting started" slide for hands-on
 
+-   About me
+-   Quick intros
 -   Check download
-
 -   Tour of RStudio IDE
 :::
 
 ## Quarto
 
-> Quarto® is an open-source scientific and technical publishing system built to dramatically improve the **process of creating** and collaborating
+> Quarto® is an open-source scientific and technical publishing system built to dramatically improve the process of creating and collaborating
 
 ![](images/horst_quarto_schematic.png){fig-alt="Graphic showing R, Python, Julia, and Observable languages flowing to Quarto and then on to html, PDF, and MS Word documents"}
 
 ::: notes
-I think it's totally appropriate to stop here and ask how folks feel about the term open source
+lowering the activation energy to reproducible reporting in MANY ways
+
+I think it's totally appropriate to stop here and ask how folks feel about the term open/reproducible
 :::
 
 ## 
 
 Quarto documents, and other **"literate programming"** documents such as `.rmd` and `.ipynb`, include code, prose, and results in a single human-readable file
 
-![](images/rmarkdown_wizards.png){style="margin-top: -20px;" width="2494"}
+![](images/rmarkdown_wizards.png){style="margin-top: -10px;" width="2494"}
 
 ::: notes
 same here! stop and ask folks how they feel about the term literate programming
+:::
+
+## Change your mental model
+
+![](images/drakeMeme.jpeg){fig-alt="drake meme shaking head at copy/paste and encouraging source -> output models"}
+
+## Change your mental model
+
+::: columns
+::: {.column style="width: \"50%;"}
+Source ↔ output
+
+![](images/word.png){fig-alt="screenshot of blank word.docx" width="1062"}
+:::
+
+::: {.column style="width"}
+Source → output
+
+![](images/Screen%20Shot%202022-08-26%20at%209.11.15%20AM.png)
+:::
 :::
 
 ## Change your mental model
@@ -65,17 +97,13 @@ Source → output
 :::
 :::
 
-## Same ~~doll~~ source, different occasions
+## Same doll, different occasions
 
 [![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits"}](https://www.americangirl.com/shop/c/welliewishers)
 
-## Keep your happy place
+## Same ~~doll~~ source, different occasions
 
-![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395"}
-
-## Keep your happy place
-
-![](https://quarto.org/docs/computations/images/python-vscode.png){fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="395"}
+![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits"}
 
 ## Anatomy of a `.qmd`
 
@@ -134,6 +162,10 @@ This is a sentence with some **bold text**, some *italic text* and an
 
 Check out https://commonmark.org/help/tutorial/ for a tutorial on common markup languages!
 
+::: {notes}
+stop and show visual editor here
+:::
+
 ## Code
 
 ::: columns
@@ -183,17 +215,214 @@ Check out https://commonmark.org/help/tutorial/ for a tutorial on common markup 
 :::
 :::
 
-## Nearly limitless output formats
+## Keep your happy place
+
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395"}
+
+## Keep your happy place
+
+![](https://quarto.org/docs/computations/images/python-vscode.png){fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="395"}
+
+## Consort Diagrams
+
+::: columns
+::: {.column style="width:30%"}
+```{r}
+library(consort)
+
+set.seed(1001)
+
+N <- 300
+
+trialno <- sample(c(1000:2000), N)
+
+exc <- rep(NA, N)
+
+exc[sample(1:N, 15)] <- sample(c("Sample not collected", "MRI not collected", "Other"),
+
+15, replace = T, prob = c(0.4, 0.4, 0.2))
+
+arm <- rep(NA, N)
+
+arm[is.na(exc)] <- sample(c("Conc", "Seq"), sum(is.na(exc)), replace = T)
+
+fow1 <- rep(NA, N)
+
+fow1[!is.na(arm)] <- sample(c("Withdraw", "Discontinued", "Death", "Other", NA),
+
+sum(!is.na(arm)), replace = T,
+
+prob = c(0.05, 0.05, 0.05, 0.05, 0.8))
+
+fow2 <- rep(NA, N)
+
+fow2[!is.na(arm) & is.na(fow1)] <- sample(c("Protocol deviation", "Outcome missing", NA),
+
+sum(!is.na(arm) & is.na(fow1)), replace = T,
+
+prob = c(0.05, 0.05, 0.9))
+
+df <- data.frame(trialno, exc, arm, fow1, fow2)
+
+kable(head(df)) %>%
+  kable_styling(font_size = 17)
+```
+:::
+
+::: {.column style="width: 70%; margin-top: -25px; margin-right: -85px; margin-left: -20px;"}
+```{r}
+#| fig-width: 8.2
+#| fig-height: 8
+#| fig-align: right
+#| message: false
+#| warning: false
+#| results: hide
+
+
+out <- consort_plot(data = df,
+             order = c(trialno = "Population",
+                          exc    = "Excluded",
+                          arm     = "Randomized patient",
+                          fow1    = "Lost of Follow-up",
+                          trialno = "Finished Followup",
+                          fow2    = "Not evaluable",
+                          trialno = "Final Analysis"),
+             side_box = c("exc", "fow1", "fow2"),
+             allocation = "arm",
+             labels = c("1" = "Screening", "2" = "Randomization",
+                        "5" = "Final"),
+             dist = 0.03,
+             cex = 1.02)
+
+
+par(bg="transparent")
+
+plot(out)
+
+dev.off()
+```
+:::
+:::
+
+## Nearly limitless output formats {.center .middle}
 
 </br>
 
 ![](images/knitOutput.png){width="850"}
 
+## ...but you don't have to decide right now! {.center .middle}
+
+</br>
+
+-   `quarto create-project --type=website`
+
+</br>
+
+-   website -\> html book `r fontawesome::fa("book-medical")`
+
+::: notes
+Then show changing YAML from a website looking doc to a book looking doc with navbar top -\> sidebar contents
+:::
+
+## ...and you don't have to choose just one! {.center .middle}
+
+``` {.yaml execute="FALSE"}
+---
+title: "Housing Prices"
+author: "Mine Çetinkaya-Rundel"
+highlight-style: pygments
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+  docx: default
+---
+```
+
+## Easier collaboration with `.docx` collaborators
+
+::: columns
+::: {.column style="width:55%;"}
+![](images/quartoWord.png){fig-alt="screenshot of a quarto document knit to word showing a table of contents"}
+:::
+
+::: {.column style="width:40%;"}
+``` {.yaml execute="FALSE"}
+---
+title: "Quarto Demo"
+author: "Appsilon"
+date: "2022-5-24"
+format:
+    docx:
+        toc: true
+        toc-depth: 2
+        toc-title: Table of contents
+        number-sections: true
+        highlight-style: github
+---
+```
+
+[@radecic2022]
+:::
+:::
+
 ## Render and Send 'er `r fontawesome::fa("paper-plane")`
 
 In general, if it renders, it's safe to send!
 
-[![](images/netlify-drop.png){fig-alt="screenshot of netlify.app's quick drop page"}](app.netlify.com/drop)
+![](images/Screen%20Shot%202022-08-26%20at%2012.14.25%20PM.png){fig-alt="screenshot of UArizona RStudio Connect service"}
+
+## And Beyond! {background-image="images/diveInQuarto.png," background-size="contain\","}
+
+## CSS and SCSS
+
+CSS
+
+``` {.css echo="fenced"}
+.body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+```
+
+scss = CSS +
+
+``` {.scss echo="fenced"}
+/*-- scss:defaults --*/
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+
+/*-- scss:rules --*/
+
+.body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+
+## Images {.middle .center}
+
+Markdown is all fun and games until you need to resize some photos!
+
+Watch this `r fontawesome::fa("play")`
+
+## Jupyter
+
+Step up your `.ipynb` game with `quarto render my_notebook.ipynb`
+
+::: {footer}
+https://towardsdatascience.com/quarto-a-game-changer-for-rendering-jupyter-notebooks-826c885a531f
+:::
+
+## Awesome Quarto
+
+![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png) [Curated list of Quarto docs, talks, tools, examples & articles](https://github.com/mcanouil/awesome-quarto)
 
 ## Summary
 
