@@ -5,7 +5,6 @@ format:
     logo: assets/dsi.png
     code-link: true
     incremental: true
-bibliography: references.bib
 ---
 
 # Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png\"," background-opacity=".6"}
