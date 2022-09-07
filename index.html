@@ -402,10 +402,7 @@
     <div class="slides">
 
 
-<section class="slide level2"><div class="cell">
-
-</div>
-</section><section><section id="quarto-for-reproducible-reporting" class="title-slide slide level1 center" data-background-image="assets/geometryClouds.png" data-background-opacity=".6" style="width: 1000px"><h1>Quarto for Reproducible Reporting</h1>
+<section><section id="quarto-for-reproducible-reporting" class="title-slide slide level1 center" data-background-image="assets/geometryClouds.png&quot;," data-background-opacity=".6"><h1>Quarto for Reproducible Reporting</h1>
 <p>Fall 2022 Literate Programming Workshops</p>
 <p>Heidi Steiner, PSM | Data Science Educator</p>
 <div class="footer">
@@ -449,7 +446,7 @@
           display:block!important;
       }</style></aside></section><section id="section-1" class="slide level2"><h2></h2>
 <p>Quarto documents, and other <strong>“literate programming”</strong> documents such as <code>.rmd</code> and <code>.ipynb</code>, include code, prose, and results in a single human-readable file</p>
-<p><img data-src="images/rmarkdown_wizards.png" style="margin-top: -10px;" width="2494"></p>
+<p><img data-src="images/rmarkdown_wizards.png" style="margin-top: -10px;" width="307"></p>
 <aside class="notes"><p>same here! stop and ask folks how they feel about the term literate programming</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -463,11 +460,11 @@
           display:block!important;
       }</style></aside></section><section id="change-your-mental-model" class="slide level2"><h2>Change your mental model</h2>
 
-<img data-src="images/drakeMeme.jpeg" alt="drake meme shaking head at copy/paste and encouraging source -> output models" class="r-stretch"></section><section id="change-your-mental-model-1" class="slide level2"><h2>Change your mental model</h2>
+<img data-src="images/drakeMeme.jpeg" alt="drake meme shaking head at copy/paste and encouraging source -> output models" class="r-stretch quarto-figure-center"></section><section id="change-your-mental-model-1" class="slide level2"><h2>Change your mental model</h2>
 <div class="columns">
 <div class="column" style="width: &quot;50%;">
 <p>Source ↔︎ output</p>
-<p><img data-src="images/word.png" alt="screenshot of blank word.docx" width="1062"></p>
+<p><img data-src="images/word.png" alt="screenshot of blank word.docx" width="252"></p>
 </div><div class="column" style="width">
 <p>Source → output</p>
 <p><img data-src="images/Screen%20Shot%202022-08-26%20at%209.11.15%20AM.png"></p>
@@ -491,12 +488,14 @@
 </h2>
 <div class="columns">
 <div class="column" style="width: 20%">
+<div style="color: #8B0015; font-size: 1.5em">
 <ol type="1">
 <li class="fragment">Metadata</li>
 <li class="fragment">Markup</li>
 <li class="fragment">Code</li>
 <li class="fragment">Output</li>
 </ol>
+</div>
 </div><div class="column" style="width: 80%">
 <div class="quarto-figure quarto-figure-right">
 <figure><p><img data-src="images/anatomy.jpeg" alt="illustration of a document with arrows to include metadata, text, code, and output"></p>
@@ -513,9 +512,13 @@
 <span id="cb1-3"><a href="#cb1-3"></a><span class="fu">key</span><span class="kw">:</span><span class="at"> value</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p></p>
 <ul>
-<li class="fragment"><p>Save options in your YAML</p></li>
+<li class="fragment">
+<p>Save options in your YAML</p>
+<ul>
+<li class="fragment">“setup” chunk</li>
+</ul>
+</li>
 <li class="fragment"><p><code>format: revealjs</code></p></li>
 <li class="fragment"><p>re-render often!</p></li>
 </ul>
@@ -533,10 +536,18 @@
 <span id="cb2-3"><a href="#cb2-3"></a><span class="al">![image](image.png)</span>{fig-alt="Alt text for this image"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p></p>
 <p>Check out https://commonmark.org/help/tutorial/ for a tutorial on common markup languages!</p>
-<div class="{notes}">
-<p>stop and show visual editor here</p>
-</div>
-</section><section id="code" class="slide level2"><h2>Code</h2>
+<aside class="notes"><p>stop and show visual editor here</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside></section><section id="code" class="slide level2"><h2>Code</h2>
 <div class="columns">
 <div class="column" style="width: 60%">
 <div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
@@ -646,7 +657,7 @@
 <div class="cell" data-layout-align="right">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-right">
-<figure><p><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="787"></p>
+<figure><p><img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="787"></p>
 </figure>
 </div>
 </div>

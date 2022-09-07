@@ -8,17 +8,20 @@ format:
 bibliography: references.bib
 ---
 
-```{r setup}
-
-library(knitr)
-library(kableExtra)
-```
-
-# Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png" background-opacity=".6" style="width: 1000px"}
+# Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png\"," background-opacity=".6"}
 
 Fall 2022 Literate Programming Workshops
 
 Heidi Steiner, PSM \| Data Science Educator
+
+```{r}
+#| label: setup
+#| include: false
+
+
+library(knitr)
+library(kableExtra)
+```
 
 ::: footer
 Content is a mixture of \[RStudio Education materials\](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by \[Desirée De Leon\](https://desiree.rbind.io/) and \[Allison Horst\](https://www.allisonhorst.com/), CC-BY-NC-ND.
@@ -55,7 +58,7 @@ I think it's totally appropriate to stop here and ask how folks feel about the t
 
 Quarto documents, and other **"literate programming"** documents such as `.rmd` and `.ipynb`, include code, prose, and results in a single human-readable file
 
-![](images/rmarkdown_wizards.png){style="margin-top: -10px;" width="2494"}
+![](images/rmarkdown_wizards.png){style="margin-top: -10px;" width="307"}
 
 ::: notes
 same here! stop and ask folks how they feel about the term literate programming
@@ -63,7 +66,7 @@ same here! stop and ask folks how they feel about the term literate programming
 
 ## Change your mental model
 
-![](images/drakeMeme.jpeg){fig-alt="drake meme shaking head at copy/paste and encouraging source -> output models"}
+![](images/drakeMeme.jpeg){fig-alt="drake meme shaking head at copy/paste and encouraging source -> output models" fig-align="center"}
 
 ## Change your mental model
 
@@ -71,7 +74,7 @@ same here! stop and ask folks how they feel about the term literate programming
 ::: {.column style="width: \"50%;"}
 Source ↔ output
 
-![](images/word.png){fig-alt="screenshot of blank word.docx" width="1062"}
+![](images/word.png){fig-alt="screenshot of blank word.docx" width="252"}
 :::
 
 ::: {.column style="width"}
@@ -109,10 +112,12 @@ Source → output
 
 ::: columns
 ::: {.column style="width: 20%"}
+::: {style="color: #8B0015; font-size: 1.5em"}
 1.  Metadata
 2.  Markup
 3.  Code
 4.  Output
+:::
 :::
 
 ::: {.column style="width: 80%"}
@@ -134,9 +139,9 @@ key: value
 ---
 ```
 
-</br>
-
 -   Save options in your YAML
+
+    -   "setup" chunk
 
 -   `format: revealjs`
 
@@ -162,7 +167,7 @@ This is a sentence with some **bold text**, some *italic text* and an
 
 Check out https://commonmark.org/help/tutorial/ for a tutorial on common markup languages!
 
-::: {notes}
+::: notes
 stop and show visual editor here
 :::
 
