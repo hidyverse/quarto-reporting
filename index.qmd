@@ -7,7 +7,7 @@ format:
     incremental: true
 ---
 
-# Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png\"," background-opacity=".6"}
+# Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png," background-opacity=".6"}
 
 Fall 2022 Literate Programming Workshops
 
@@ -63,7 +63,7 @@ I think it's totally appropriate to stop here and ask how folks feel about the t
 
 Quarto documents, and other **"literate programming"** documents such as `.rmd` and `.ipynb`, include code, prose, and results in a single human-readable file
 
-![](images/rmarkdown_wizards.png){style="margin-top: -10px;" width="414"}
+![](images/rmarkdown_wizards.png){style="margin-top: -10px;" width="1000"}
 
 ::: notes
 same here! stop and ask folks how they feel about the term literate programming
@@ -77,7 +77,7 @@ same here! stop and ask folks how they feel about the term literate programming
 
 Clone `https://github.com/hidyverse/quarto-examples` to RStudio
 
-:::{.callout-tip}
+::: callout-tip
 ## Hints
 
 If you're not new to these concepts, feel free to be flexible with these directions! Comfy outside of RStudio? Give VSCode a try.
@@ -170,17 +170,15 @@ key: value
 
 ## Your Turn {.your-turn}
 
-Open `index.qmd` .
+Open `index.qmd`
 
-:::{.callout-tip}
-## Hints
+::: callout-tip
+## Hint:
 
-RStudio *should* tell you when there are things to install...pay close attention!
+RStudio should tell you when there are things to install...pay close attention!
 :::
 
 ## Markdown (...is a Markup language)
-
-Some example Markdown text:
 
 ``` markdown
 # Heading 1
@@ -195,6 +193,8 @@ This is a sentence with some **bold text**, some *italic text* and an
 ::: notes
 stop and show visual editor here
 :::
+
+## Your Turn {.your-turn}
 
 ## Code
 
@@ -252,6 +252,10 @@ stop and show visual editor here
 ## Keep your happy place
 
 ![](https://quarto.org/docs/computations/images/python-vscode.png){fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="395"}
+
+## Your Turn {.your-turn}
+
+.ipynb example here
 
 ## Consort Diagrams
 
@@ -340,7 +344,7 @@ dev.off()
 
 ![](images/knitOutput.png){width="850"}
 
-## ...but you don't have to decide right now! {.center .middle}
+## Your Turn {.your-turn}
 
 </br>
 
@@ -406,7 +410,7 @@ In general, if it renders, it's safe to send!
 
 ![](images/Screen%20Shot%202022-08-26%20at%2012.14.25%20PM.png){fig-alt="screenshot of UArizona RStudio Connect service"}
 
-## And Beyond! {background-image="images/diveInQuarto.png," background-size="contain\","}
+## And Beyond! {background-image="images/diveInQuarto.png," color="#E2E9EB," background-size="\"contain\","}
 
 ## CSS and SCSS
 
@@ -452,7 +456,8 @@ https://towardsdatascience.com/quarto-a-game-changer-for-rendering-jupyter-noteb
 
 ## Awesome Quarto
 
-![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png) [Curated list of Quarto docs, talks, tools, examples & articles](https://github.com/mcanouil/awesome-quarto)
+![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png){width="537"} 
+[Curated list of Quarto docs, talks, tools, examples & articles](https://github.com/mcanouil/awesome-quarto)
 
 ## Summary
 

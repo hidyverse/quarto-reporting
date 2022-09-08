@@ -5,14 +5,32 @@ $theme-white: #E2E9EB;
 $theme-green: #70B865;
 $theme-ltblue: #378DBD;
 $theme-gray: #9EABAE;
-
+$theme-pink: #EF4056;
 
 $body-color: $theme-darkblue;
 $link-color: $theme-green;
-$footer: $theme-ltblue;
 
 /*-- scss:rules --*/
 
-your-turn {
-  background: $theme-green;
+.your-turn {
+  text-align: center;
+}
+
+.your-turn h2 {
+  color: $theme-pink;
+}
+
+.reveal footer {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+  color: $theme-ltblue !important;
+}
+
+.reveal .callout-tip {
+  position: fixed !important;
+  bottom: 20px !important;
+}
+
+.reveal blockquote {
+  color: $theme-blue !important;
 }
