@@ -32,6 +32,12 @@ I am a health scientist and NOT a computer scientist!
 
 I am very much still learning Quarto, RMarkdown, R, etc.
 
+## `r fontawesome::fa("exclamation-triangle")`
+
+How are we on installations?
+
+Tour of RStudio IDE
+
 ::: notes
 Add "getting started" slide for hands-on
 
@@ -57,7 +63,7 @@ I think it's totally appropriate to stop here and ask how folks feel about the t
 
 Quarto documents, and other **"literate programming"** documents such as `.rmd` and `.ipynb`, include code, prose, and results in a single human-readable file
 
-![](images/rmarkdown_wizards.png){style="margin-top: -10px;" width="307"}
+![](images/rmarkdown_wizards.png){style="margin-top: -10px;" width="414"}
 
 ::: notes
 same here! stop and ask folks how they feel about the term literate programming
@@ -67,13 +73,23 @@ same here! stop and ask folks how they feel about the term literate programming
 
 ![](images/drakeMeme.jpeg){fig-alt="drake meme shaking head at copy/paste and encouraging source -> output models" fig-align="center"}
 
+## Your Turn {.your-turn}
+
+Clone `https://github.com/hidyverse/quarto-examples` to RStudio
+
+:::{.callout-tip}
+## Hints
+
+If you're not new to these concepts, feel free to be flexible with these directions! Comfy outside of RStudio? Give VSCode a try.
+:::
+
 ## Change your mental model
 
 ::: columns
 ::: {.column style="width: \"50%;"}
 Source ↔ output
 
-![](images/word.png){fig-alt="screenshot of blank word.docx" width="252"}
+![](images/word.png){fig-alt="screenshot of blank word.docx" width="286"}
 :::
 
 ::: {.column style="width"}
@@ -101,17 +117,17 @@ Source → output
 
 ## Same doll, different occasions
 
-[![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits"}](https://www.americangirl.com/shop/c/welliewishers)
+[![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" fig-align="center" width="3000"}](https://www.americangirl.com/shop/c/welliewishers)
 
 ## Same ~~doll~~ source, different occasions
 
-![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits"}
+![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" fig-align="center" width="3000"}
 
 ## Anatomy of a `.qmd`
 
 ::: columns
 ::: {.column style="width: 20%"}
-::: {style="color: #8B0015; font-size: 1.5em"}
+::: {style="color: #8B0015; font-size: 1.2em"}
 1.  Metadata
 2.  Markup
 3.  Code
@@ -119,7 +135,7 @@ Source → output
 :::
 :::
 
-::: {.column style="width: 80%"}
+::: {.column style="width: 70%"}
 ![](images/anatomy.jpeg){fig-alt="illustration of a document with arrows to include metadata, text, code, and output" fig-align="right"}
 :::
 :::
@@ -152,6 +168,16 @@ key: value
 :::
 :::
 
+## Your Turn {.your-turn}
+
+Open `index.qmd` .
+
+:::{.callout-tip}
+## Hints
+
+RStudio *should* tell you when there are things to install...pay close attention!
+:::
+
 ## Markdown (...is a Markup language)
 
 Some example Markdown text:
@@ -162,9 +188,9 @@ This is a sentence with some **bold text**, some *italic text* and an
 ![image](image.png){fig-alt="Alt text for this image"}.
 ```
 
-</br>
+![](images/markdown.png){width="496"}
 
-Check out https://commonmark.org/help/tutorial/ for a tutorial on common markup languages!
+\^\^ Check out [commonmark](https://commonmark.org/help/tutorial/) for a tutorial on common markup languages!
 
 ::: notes
 stop and show visual editor here

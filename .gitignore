@@ -39,7 +39,5 @@ vignettes/*.pdf
 .Renviron
 
 # workshop specific files
-practice/Intro_to_Python_files/
-practice/Intro_to_Python.qmd
-practice/Intro_to_Python.html
+quarto-examples/
 
