@@ -4,7 +4,6 @@ format:
     theme: [default, assets/custom.scss]
     logo: assets/dsi.png
     code-link: true
-    incremental: true
 ---
 
 # Quarto for Reproducible Reporting {background-image="assets/geometryClouds.png," background-opacity=".6"}
@@ -22,29 +21,31 @@ library(knitr)
 library(kableExtra)
 ```
 
-::: footer
-Content is a mixture of \[RStudio Education materials\](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by \[Desirée De Leon\](https://desiree.rbind.io/) and \[Allison Horst\](https://www.allisonhorst.com/), CC-BY-NC-ND.
-:::
-
-## `r fontawesome::fa("exclamation-triangle")`
+## `r fontawesome::fa("exclamation-triangle")` {.center}
 
 I am a health scientist and NOT a computer scientist!
 
 I am very much still learning Quarto, RMarkdown, R, etc.
 
-## `r fontawesome::fa("step-backward")`
+::: {.footer .center style="width: 80%;"}
+Content is a mixture of \[RStudio Education materials\](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by \[Desirée De Leon\](https://desiree.rbind.io/) and \[Allison Horst\](https://www.allisonhorst.com/), CC-BY-NC-ND.
+:::
+
+## `r fontawesome::fa("step-backward")` {.center}
 
 How are we on installations?
 
 Tour of RStudio IDE
 
 ::: notes
-Add "getting started" slide for hands-on
 
--   About me
--   Quick intros
--   Check download
--   Tour of RStudio IDE
+I highly recommend you sign up for a [free RStudio cloud account](https://rstudio.cloud/plans/free "https://rstudio.cloud/plans/free") for this workshop to avoid installation issues. You can always work to recreate materials on your local machine later on. If you choose the cloud route, that\'s all you need. All installations will follow as needed.
+
+ 
+
+If you prefer your local machine, please install [quarto](https://quarto.org/docs/get-started/ "https://quarto.org/docs/get-started/"), R packages ggplot2, knitr, rmarkdown, skimr, survival, tidyverse (via \`install.packages(c())\`), [Python](https://www.python.org/downloads/ "https://www.python.org/downloads/") and python package [matplotlib](https://matplotlib.org/stable/users/installing/index.html "https://matplotlib.org/stable/users/installing/index.html").
+
+\^\^ There are probably things I\'m forgetting so add to this list as needed
 :::
 
 ## Quarto
@@ -79,12 +80,12 @@ same here! stop and ask folks how they feel about the term literate programming
 
 <!-- -->
 
--   Open `index.qmd`
-
--   Render `r fontawesome::fa("play")`
+-   Open `Intro_to_Quarto.qmd`, and render `r fontawesome::fa("play")`
 
 ::: callout-tip
 ## Hints
+
+-   "Preview in Viewer Pane"
 
 -   If you're not new to these concepts, feel free to be flexible with these directions! Comfy outside of RStudio? Give VSCode a try.
 
@@ -97,7 +98,7 @@ same here! stop and ask folks how they feel about the term literate programming
 ::: {.column style="width: \"50%;"}
 Source ↔ output
 
-![](images/word.png){fig-alt="screenshot of blank word.docx" width="707"}
+![](images/word.png){fig-alt="screenshot of blank word.docx" width="390"}
 :::
 
 ::: {.column style="width"}
@@ -131,16 +132,21 @@ Source → output
 
 ![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" fig-align="center" width="3000"}
 
-## Let's dive in. {background-image="images/diveInQuarto.png," color="#E2E9EB," background-size="\"contain\","}
+## Let's dive in.  {.darkbackground background-image="images/diveInQuarto.png," background-size="contain," background-opacity=".6,"}
 
-## Anatomy of a `.qmd`
+## Anatomy of a `.qmd` {.center}
 
-::: {.columns margin-right=" -20px,"} ::: {.column style="width: 20%"} ::: {style="color: #A95C42; font-size: 1.2em"} 1. Metadata 2. Markup 3. Code 4. Output ::: :::
-
-::: {.column style="width: 70%"}
-![](images/anatomy.jpeg){fig-alt="illustration of a document with arrows to include metadata, text, code, and output" fig-align="right" width="1034"}
+::: columns
+::: {.column style="width: 20%; color: #A95C42; font-size: 1.2em;"}
+1.  Metadata
+2.  Markup
+3.  Code
+4.  Output
 :::
 
+::: {.column style="width: 75%;"}
+![](images/anatomy.jpeg){fig-alt="handrawn graphic of literate programming document" fig-align="right"}
+:::
 :::
 
 ## Metadata: YAML
@@ -180,6 +186,13 @@ key: value
 
 -   Did you try RStudio's tab-completion feature?
 -   re-render often when you make changes to your YAML!
+-   Do you know how to search documentation? https://quarto.org/docs/reference/
+:::
+
+::: notes
+change format: html to format:\n html:\\n toc: true\\ncode-link: true
+
+maybe have to pop open in full size window to see the TOC
 :::
 
 ## Markdown (...is a Markup language)
@@ -202,9 +215,11 @@ stop and show visual editor here
 
 ## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
--   Add an image (with or without the visual editor) with markdown
+With or without the visual editor...
 
--   Add a blockquote text section (with or without the visual editor) with markdown
+-   Add an image
+
+-   Add a blockquote text section
 
 ## Code
 
@@ -257,13 +272,25 @@ stop and show visual editor here
 
 ## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
--   Investigate `Intro_to_Python.ipynb` (Can you open it?)
+-   Investigate `Intro_to_Python.ipynb` (*Hint*: Can you open it?)
 
 -   Find your Terminal within RStudio
 
--   Convert your `ipynb` to `qmd` with `quarto convert Intro_to_Python.ipynb`
+-   Convert your `ipynb` to `qmd` with
 
-## Keep your happy place
+    `quarto convert Intro_to_Python.ipynb`
+
+-   Render `Intro_to_Python.qmd`
+
+::: notes
+the python install is here and matplotlib...just keep pressing render until everything is installed and follow the prompts to install what is needed.
+
+python -m pip install -U pip (rstudio cloud has pip)
+
+python -m pip install -U matplotlib
+:::
+
+## Don't like RStudio? 
 
 ![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395"}
 
@@ -273,18 +300,23 @@ stop and show visual editor here
 
 ## Nearly limitless output formats {.center .middle}
 
-</br>
-
-![](images/knitOutput.png){width="850"}
+![](images/knitOutput.png){style="margin-top: 20px;" fig-alt="illustration of brown hedgehod wearing a yellow knitted beanie knitting a turquoise scarf surrounded by possible output options such as pdf and word doc" width="850"}
 
 ## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
--   `quarto create-project --type=website` , render
--   *Add* a PDF output format
--   Change your website into a book `r fontawesome::fa("book-medical")` by updating `navbar: top` to `sidebar: contents`
+-   `quarto create-project mybook --type=book`
+
+-   `quarto preview mybook/`
+
+-   `quarto render mybook/`
+
+```{=html}
+<!-- -->
+```
+-   Peep the `_quarto.yml` file and PDF output
 
 ::: notes
-You don't have to decide on your document right away like blogdown v. bookdown , and you don't have to choose just one
+this broke for me in cloud right before the workshop :)
 :::
 
 ## Render and Send 'er `r fontawesome::fa("paper-plane")`
@@ -321,22 +353,46 @@ $primary-color: #333;
 }
 ```
 
-## Awesome Quarto `r fontawesome::fa("search")`
+::: notes
+I live on this website: https://www.w3schools.com/cssref/default.asp
+:::
 
-[![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png){width="537"}](https://github.com/mcanouil/awesome-quarto)
+## Awesome Quarto `r fontawesome::fa("search")` {.center}
+
+[![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png){fig-align="center" width="291"}](https://github.com/mcanouil/awesome-quarto)
 
 ::: callout-tip
-## Hint
+## Pro-Tip
 
 "awesome" lists are often great resources!
 :::
 
-## Summary
+## Summary {style="width: 115%;"}
 
--   Quarto is a "batteries included" command line tool that shares syntax across output types and languages and can be used within many editors
+-   Quarto is a "batteries included" command line tool that shares syntax across output types/languages/editors
 
--   Learn about revealjs presentations from this [slidedeck](https://github.com/hidyverse/quarto-reporting)
+-   Learn about revealjs presentations in quarto from this [slidedeck](https://github.com/hidyverse/quarto-reporting)
 
--   Send me feedback `r fontawesome::fa("comments")` <https://tinyurl.com/y2sbf58r>
+-   Send me feedback! `r fontawesome::fa("comments")` <https://tinyurl.com/y2sbf58r>
 
-![](images/qmd_render_schema.png){fig-alt="illustration of quarto's rendering process"}
+![](images/qmd_render_schema.png){style="margin-bottom: -40px; position: absolute; bottom: -.10px;" fig-alt="illustration of quarto's rendering process" fig-align="center" width="7547"}
+
+## Extra Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
+
+-   Clone a GitHub wiki of your choice (but ideally a new example because this is a weird process)
+
+    -   Install {usethis}
+
+-   Create `qmd` files that are copies of each of the wiki's `md` files
+
+    -   Make some changes
+
+-   Render each `qmd`
+
+-   Authenticate GitHub with {usethis}
+
+-   Commit and push changes
+
+::: notes
+https://gist.github.com/z3tt/3dab3535007acf108391649766409421
+:::

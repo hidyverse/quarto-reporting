@@ -12,17 +12,19 @@ $link-color: $theme-green;
 
 /*-- scss:rules --*/
 
-.your-turn {
-  text-align: center;
-}
 
 .your-turn h2 {
+  text-align: center;
   color: $theme-pink;
 }
 
-.reveal .footer {
-  margin-right: 20px !important;
-  margin-left: 20px !important;
+.darkbackground h2 {
+  color: $theme-gray;
+}
+
+.footer {
+  margin-right: 30px !important;
+  margin-left: 30px !important;
   color: $theme-ltblue !important;
 }
 

@@ -385,22 +385,20 @@
 <section><section id="quarto-for-reproducible-reporting" class="title-slide slide level1 center" data-background-image="assets/geometryClouds.png," data-background-opacity=".6"><h1>Quarto for Reproducible Reporting</h1>
 <p>Fall 2022 Literate Programming Workshops</p>
 <p>Heidi Steiner, PSM | Data Science Educator</p>
-<div class="footer">
-<p>Content is a mixture of [RStudio Education materials](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by [Desirée De Leon](https://desiree.rbind.io/) and [Allison Horst](https://www.allisonhorst.com/), CC-BY-NC-ND.</p>
-</div>
-</section><section id="section" class="slide level2"><h2><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg></h2>
+</section><section id="section" class="slide level2 center"><h2><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg></h2>
 <p>I am a health scientist and NOT a computer scientist!</p>
 <p>I am very much still learning Quarto, RMarkdown, R, etc.</p>
-</section><section id="section-1" class="slide level2"><h2><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 468V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v176.4l195.5-181C352.1 22.3 384 36.6 384 64v384c0 27.4-31.9 41.7-52.5 24.6L136 292.7V468c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12z"></path></svg></h2>
+<div class="footer center" style="width: 80%;">
+<p>Content is a mixture of [RStudio Education materials](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by [Desirée De Leon](https://desiree.rbind.io/) and [Allison Horst](https://www.allisonhorst.com/), CC-BY-NC-ND.</p>
+</div>
+</section><section id="section-1" class="slide level2 center"><h2><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 468V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v176.4l195.5-181C352.1 22.3 384 36.6 384 64v384c0 27.4-31.9 41.7-52.5 24.6L136 292.7V468c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12z"></path></svg></h2>
 <p>How are we on installations?</p>
 <p>Tour of RStudio IDE</p>
-<aside class="notes"><p>Add “getting started” slide for hands-on</p>
-<ul>
-<li>About me</li>
-<li>Quick intros</li>
-<li>Check download</li>
-<li>Tour of RStudio IDE</li>
-</ul><style type="text/css">
+<aside class="notes"><p>I highly recommend you sign up for a&nbsp;<a href="https://rstudio.cloud/plans/free" title="https://rstudio.cloud/plans/free">free RStudio cloud account</a> for this workshop to avoid installation issues. You can always work to recreate materials on your local machine later on.&nbsp;If you choose the cloud route, that's all you need. All installations will follow as needed.</p>
+<p>&nbsp;</p>
+<p>If you prefer your local machine, please install&nbsp;<a href="https://quarto.org/docs/get-started/" title="https://quarto.org/docs/get-started/">quarto</a>, R packages ggplot2, knitr, rmarkdown, skimr, survival, tidyverse (via `install.packages(c())`),&nbsp;<a href="https://www.python.org/downloads/" title="https://www.python.org/downloads/">Python</a> and python package&nbsp;<a href="https://matplotlib.org/stable/users/installing/index.html" title="https://matplotlib.org/stable/users/installing/index.html">matplotlib</a>.</p>
+<p>^^ There are probably things I'm forgetting so add to this list as needed</p>
+<style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
           clip: rect(1px, 1px, 1px, 1px);
@@ -446,11 +444,11 @@
 <img data-src="images/drakeMeme.jpeg" alt="drake meme shaking head at copy/paste and encouraging source -> output models" class="r-stretch quarto-figure-center"></section><section id="your-turn" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
-<li class="fragment">Clone <code>https://github.com/hidyverse/quarto-examples</code> to RStudio</li>
+<li>Clone <code>https://github.com/hidyverse/quarto-examples</code> to RStudio</li>
 </ul>
 <!-- --><ul>
-<li class="fragment"><p>Open <code>index.qmd</code></p></li>
-<li class="fragment"><p>Render <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg></p></li>
+<li>Open <code>Intro_to_Quarto.qmd</code>, and render <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg>
+</li>
 </ul>
 <div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
@@ -462,8 +460,9 @@
 </div>
 <div class="callout-content">
 <ul>
-<li class="fragment"><p>If you’re not new to these concepts, feel free to be flexible with these directions! Comfy outside of RStudio? Give VSCode a try.</p></li>
-<li class="fragment"><p>RStudio <em>should</em> tell you when something needs to be installed…pay close attention!</p></li>
+<li><p>“Preview in Viewer Pane”</p></li>
+<li><p>If you’re not new to these concepts, feel free to be flexible with these directions! Comfy outside of RStudio? Give VSCode a try.</p></li>
+<li><p>RStudio <em>should</em> tell you when something needs to be installed…pay close attention!</p></li>
 </ul>
 </div>
 </div>
@@ -472,7 +471,7 @@
 <div class="columns">
 <div class="column" style="width: &quot;50%;">
 <p>Source ↔︎ output</p>
-<p><img data-src="images/word.png" alt="screenshot of blank word.docx" width="707"></p>
+<p><img data-src="images/word.png" alt="screenshot of blank word.docx" width="390"></p>
 </div><div class="column" style="width">
 <p>Source → output</p>
 <p><img data-src="images/Screen%20Shot%202022-08-26%20at%209.11.15%20AM.png"></p>
@@ -492,17 +491,24 @@
 
 <img data-src="images/reproducibility_dolls.png" alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" width="3000" class="r-stretch quarto-figure-center"></section><section id="same-doll-source-different-occasions" class="slide level2"><h2>Same <del>doll</del> source, different occasions</h2>
 
-<img data-src="images/reproducibility_dolls.png" alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" width="3000" class="r-stretch quarto-figure-center"></section><section id="lets-dive-in." class="slide level2" data-background-image="images/diveInQuarto.png," color="#E2E9EB," data-background-size="&quot;contain&quot;,"><h2>Let’s dive in.</h2>
-</section><section id="anatomy-of-a-.qmd" class="slide level2"><h2>Anatomy of a <code>.qmd</code>
+<img data-src="images/reproducibility_dolls.png" alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" width="3000" class="r-stretch quarto-figure-center"></section><section id="lets-dive-in." class="slide level2 darkbackground" data-background-image="images/diveInQuarto.png," data-background-size="contain," data-background-opacity=".6,"><h2>Let’s dive in.</h2>
+</section><section id="anatomy-of-a-.qmd" class="slide level2 center"><h2>Anatomy of a <code>.qmd</code>
 </h2>
-<p>::: {.columns margin-right=” -20px,“} ::: {.column style=”width: 20%“} ::: {style=”color: #A95C42; font-size: 1.2em”} 1. Metadata 2. Markup 3. Code 4. Output ::: :::</p>
-<div class="column" style="width: 70%">
+<div class="columns">
+<div class="column" style="width: 20%; color: #A95C42; font-size: 1.2em;">
+<ol type="1">
+<li>Metadata</li>
+<li>Markup</li>
+<li>Code</li>
+<li>Output</li>
+</ol>
+</div><div class="column" style="width: 75%;">
 <div class="quarto-figure quarto-figure-right">
-<figure><p><img data-src="images/anatomy.jpeg" alt="illustration of a document with arrows to include metadata, text, code, and output" width="1034"></p>
+<figure><p><img data-src="images/anatomy.jpeg" alt="handrawn graphic of literate programming document"></p>
 </figure>
 </div>
 </div>
-<p>:::</p>
+</div>
 </section><section id="metadata-yaml" class="slide level2"><h2>Metadata: YAML</h2>
 <div class="columns">
 <div class="column" style="width: 50%">
@@ -513,13 +519,13 @@
 <span id="cb1-4"><a href="#cb1-4"></a></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li class="fragment">
+<li>
 <p>Save options in your YAML</p>
 <ul>
-<li class="fragment">“setup” chunk</li>
+<li>“setup” chunk</li>
 </ul>
 </li>
-<li class="fragment"><p><code>format: html</code></p></li>
+<li><p><code>format: html</code></p></li>
 </ul>
 </div><div class="column" style="width: 50%">
 <div class="quarto-figure quarto-figure-right">
@@ -531,8 +537,8 @@
 </section><section id="your-turn-1" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
-<li class="fragment"><p>Update the YAML header of <code>index.qmd</code> to add a Table of Contents</p></li>
-<li class="fragment"><p>Add links for the included code</p></li>
+<li><p>Update the YAML header of <code>index.qmd</code> to add a Table of Contents</p></li>
+<li><p>Add links for the included code</p></li>
 </ul>
 <div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
@@ -544,13 +550,26 @@
 </div>
 <div class="callout-content">
 <ul>
-<li class="fragment">Did you try RStudio’s tab-completion feature?</li>
-<li class="fragment">re-render often when you make changes to your YAML!</li>
+<li>Did you try RStudio’s tab-completion feature?</li>
+<li>re-render often when you make changes to your YAML!</li>
+<li>Do you know how to search documentation? https://quarto.org/docs/reference/</li>
 </ul>
 </div>
 </div>
 </div>
-</section><section id="markdown-is-a-markup-language" class="slide level2"><h2>Markdown (…is a Markup language)</h2>
+<aside class="notes"><p>change format: html to format:html:\n toc: true\ncode-link: true</p>
+<p>maybe have to pop open in full size window to see the TOC</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside></section><section id="markdown-is-a-markup-language" class="slide level2"><h2>Markdown (…is a Markup language)</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu"># Heading 1</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>This is a sentence with some **bold text**, some *italic text* and an </span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="al">![image](image.png)</span>{fig-alt="Alt text for this image"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -571,9 +590,10 @@
           display:block!important;
       }</style></aside></section><section id="your-turn-2" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
+<p>With or without the visual editor…</p>
 <ul>
-<li class="fragment"><p>Add an image (with or without the visual editor) with markdown</p></li>
-<li class="fragment"><p>Add a blockquote text section (with or without the visual editor) with markdown</p></li>
+<li><p>Add an image</p></li>
+<li><p>Add a blockquote text section</p></li>
 </ul></section><section id="code" class="slide level2"><h2>Code</h2>
 <div class="columns">
 <div class="column" style="width: 60%">
@@ -618,27 +638,44 @@
 </section><section id="your-turn-3" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
-<li class="fragment"><p>Investigate <code>Intro_to_Python.ipynb</code> (Can you open it?)</p></li>
-<li class="fragment"><p>Find your Terminal within RStudio</p></li>
-<li class="fragment"><p>Convert your <code>ipynb</code> to <code>qmd</code> with <code>quarto convert Intro_to_Python.ipynb</code></p></li>
-</ul></section><section id="keep-your-happy-place" class="slide level2"><h2>Keep your happy place</h2>
+<li><p>Investigate <code>Intro_to_Python.ipynb</code> (<em>Hint</em>: Can you open it?)</p></li>
+<li><p>Find your Terminal within RStudio</p></li>
+<li>
+<p>Convert your <code>ipynb</code> to <code>qmd</code> with</p>
+<p><code>quarto convert Intro_to_Python.ipynb</code></p>
+</li>
+<li><p>Render <code>Intro_to_Python.qmd</code></p></li>
+</ul>
+<aside class="notes"><p>the python install is here and matplotlib…just keep pressing render until everything is installed and follow the prompts to install what is needed.</p>
+<p>python -m pip install -U pip (rstudio cloud has pip)</p>
+<p>python -m pip install -U matplotlib</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside></section><section id="dont-like-rstudio" class="slide level2"><h2>Don’t like RStudio?</h2>
 
-<img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395" class="r-stretch"></section><section id="keep-your-happy-place-1" class="slide level2"><h2>Keep your happy place</h2>
+<img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395" class="r-stretch"></section><section id="keep-your-happy-place" class="slide level2"><h2>Keep your happy place</h2>
 
 <img data-src="https://quarto.org/docs/computations/images/python-vscode.png" alt="A screenshot of a Quarto document rendered inside VSCode" width="395" class="r-stretch"></section><section id="nearly-limitless-output-formats" class="slide level2 center middle"><h2>Nearly limitless output formats</h2>
-<p></p>
 
-<img data-src="images/knitOutput.png" width="850" class="r-stretch"></section><section id="your-turn-4" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+<img data-src="images/knitOutput.png" style="margin-top: 20px;" alt="illustration of brown hedgehod wearing a yellow knitted beanie knitting a turquoise scarf surrounded by possible output options such as pdf and word doc" width="850" class="r-stretch"></section><section id="your-turn-4" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
-<li class="fragment">
-<code>quarto create-project --type=website</code> , render</li>
-<li class="fragment">
-<em>Add</em> a PDF output format</li>
-<li class="fragment">Change your website into a book <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M448 358.4V25.6c0-16-9.6-25.6-25.6-25.6H96C41.6 0 0 41.6 0 96v320c0 54.4 41.6 96 96 96h326.4c12.8 0 25.6-9.6 25.6-25.6v-16q0-9.6-9.6-19.2c-3.2-16-3.2-60.8 0-73.6q9.6-4.8 9.6-19.2zM144 168a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8v48a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8zm236.8 280H96c-19.2 0-32-12.8-32-32s16-32 32-32h284.8z"></path></svg> by updating <code>navbar: top</code> to <code>sidebar: contents</code>
-</li>
+<li><p><code>quarto create-project mybook --type=book</code></p></li>
+<li><p><code>quarto preview mybook/</code></p></li>
+<li><p><code>quarto render mybook/</code></p></li>
 </ul>
-<aside class="notes"><p>You don’t have to decide on your document right away like blogdown v. bookdown , and you don’t have to choose just one</p>
+<!-- --><ul>
+<li>Peep the <code>_quarto.yml</code> file and PDF output</li>
+</ul>
+<aside class="notes"><p>this broke for me in cloud right before the workshop :)</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -673,29 +710,71 @@
 <span id="cb8-10"><a href="#cb8-10"></a>  <span class="kw">font</span>: <span class="dv">100</span><span class="dt">%</span> <span class="va">$font-stack</span><span class="op">;</span></span>
 <span id="cb8-11"><a href="#cb8-11"></a>  <span class="kw">color</span>: <span class="va">$primary-color</span><span class="op">;</span></span>
 <span id="cb8-12"><a href="#cb8-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section><section id="awesome-quarto" class="slide level2"><h2>Awesome Quarto <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+<aside class="notes"><p>I live on this website: https://www.w3schools.com/cssref/default.asp</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside></section><section id="awesome-quarto" class="slide level2 center"><h2>Awesome Quarto <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
 </h2>
 
-<img data-src="images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png" width="537" class="r-stretch quarto-figure-center"><div class="callout callout-tip callout-captioned callout-style-default">
+<img data-src="images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png" width="291" class="r-stretch quarto-figure-center"><div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Hint</strong></p>
+<p><strong>Pro-Tip</strong></p>
 </div>
 <div class="callout-content">
 <p>“awesome” lists are often great resources!</p>
 </div>
 </div>
 </div>
-</section><section id="summary" class="slide level2"><h2>Summary</h2>
+</section><section id="summary" class="slide level2" style="width: 115%;"><h2>Summary</h2>
 <ul>
-<li class="fragment"><p>Quarto is a “batteries included” command line tool that shares syntax across output types and languages and can be used within many editors</p></li>
-<li class="fragment"><p>Learn about revealjs presentations from this <a href="https://github.com/hidyverse/quarto-reporting">slidedeck</a></p></li>
+<li><p>Quarto is a “batteries included” command line tool that shares syntax across output types/languages/editors</p></li>
+<li><p>Learn about revealjs presentations in quarto from this <a href="https://github.com/hidyverse/quarto-reporting">slidedeck</a></p></li>
+<li><p>Send me feedback! <svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></svg><a href="https://tinyurl.com/y2sbf58r" class="uri">https://tinyurl.com/y2sbf58r</a></p></li>
 </ul>
-<p><img data-src="images/qmd_render_schema.png" alt="illustration of quarto's rendering process"></p>
-<p><img src="assets/dsi.png" class="slide-logo"></p>
+
+<img data-src="images/qmd_render_schema.png" alt="illustration of quarto's rendering process" width="7547" class="r-stretch quarto-figure-center"></section><section id="extra-your-turn" class="slide level2 your-turn"><h2>Extra Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+</h2>
+<ul>
+<li>
+<p>Clone a GitHub wiki of your choice (but ideally a new example because this is a weird process)</p>
+<ul>
+<li>Install {usethis}</li>
+</ul>
+</li>
+<li>
+<p>Create <code>qmd</code> files that are copies of each of the wiki’s <code>md</code> files</p>
+<ul>
+<li>Make some changes</li>
+</ul>
+</li>
+<li><p>Render each <code>qmd</code></p></li>
+<li><p>Authenticate GitHub with {usethis}</p></li>
+<li><p>Commit and push changes</p></li>
+</ul>
+<aside class="notes"><p>https://gist.github.com/z3tt/3dab3535007acf108391649766409421</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside><p><img src="assets/dsi.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
