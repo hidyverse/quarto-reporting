@@ -337,4 +337,6 @@ $primary-color: #333;
 
 -   Learn about revealjs presentations from this [slidedeck](https://github.com/hidyverse/quarto-reporting)
 
+-   Send me feedback `r fontawesome::fa("comments")` <https://tinyurl.com/y2sbf58r>
+
 ![](images/qmd_render_schema.png){fig-alt="illustration of quarto's rendering process"}
