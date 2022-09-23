@@ -31,21 +31,20 @@ I am very much still learning Quarto, RMarkdown, R, etc.
 Content is a mixture of \[RStudio Education materials\](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by \[Desirée De Leon\](https://desiree.rbind.io/) and \[Allison Horst\](https://www.allisonhorst.com/), CC-BY-NC-ND.
 :::
 
-## `r fontawesome::fa("step-backward")` {.center}
+::: notes
+`r fontawesome::fa("step-backward")`
 
 How are we on installations?
 
 Tour of RStudio IDE
 
-::: notes
-
-I highly recommend you sign up for a [free RStudio cloud account](https://rstudio.cloud/plans/free "https://rstudio.cloud/plans/free") for this workshop to avoid installation issues. You can always work to recreate materials on your local machine later on. If you choose the cloud route, that\'s all you need. All installations will follow as needed.
+I highly recommend you sign up for a [free RStudio cloud account](https://rstudio.cloud/plans/free "https://rstudio.cloud/plans/free") for this workshop to avoid installation issues. You can always work to recreate materials on your local machine later on. If you choose the cloud route, that's all you need. All installations will follow as needed.
 
  
 
 If you prefer your local machine, please install [quarto](https://quarto.org/docs/get-started/ "https://quarto.org/docs/get-started/"), R packages ggplot2, knitr, rmarkdown, skimr, survival, tidyverse (via \`install.packages(c())\`), [Python](https://www.python.org/downloads/ "https://www.python.org/downloads/") and python package [matplotlib](https://matplotlib.org/stable/users/installing/index.html "https://matplotlib.org/stable/users/installing/index.html").
 
-\^\^ There are probably things I\'m forgetting so add to this list as needed
+\^\^ There are probably things I'm forgetting so add to this list as needed
 :::
 
 ## Quarto
@@ -74,7 +73,7 @@ same here! stop and ask folks how they feel about the term literate programming
 
 [![](images/drakeMeme.jpeg){fig-alt="drake meme shaking head at copy/paste and encouraging source -> output models" fig-align="center"}](https://twitter.com/ijeamaka_a/status/1367242513782763521)
 
-## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
+## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
 
 -   Clone `https://github.com/hidyverse/quarto-examples` to RStudio
 
@@ -85,7 +84,7 @@ same here! stop and ask folks how they feel about the term literate programming
 ::: callout-tip
 ## Hints
 
--   "Preview in Viewer Pane"
+-   "Preview in Viewer Pane" vs "Window"
 
 -   If you're not new to these concepts, feel free to be flexible with these directions! Comfy outside of RStudio? Give VSCode a try.
 
@@ -132,7 +131,7 @@ Source → output
 
 ![](images/reproducibility_dolls.png){fig-alt="plastic doll with textile clothing, hair of white girl wearing four different themed outfits" fig-align="center" width="3000"}
 
-## Let's dive in.  {.darkbackground background-image="images/diveInQuarto.png," background-size="contain," background-opacity=".6,"}
+## Let's dive in. {.darkbackground background-image="images/diveInQuarto.png," background-size="contain," background-opacity=".6,"}
 
 ## Anatomy of a `.qmd` {.center}
 
@@ -175,9 +174,9 @@ key: value
 :::
 :::
 
-## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
+## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
 
--   Update the YAML header of `index.qmd` to add a Table of Contents
+-   Update the YAML header of `Intro_to_Quarto.qmd` to add a Table of Contents
 
 -   Add links for the included code
 
@@ -213,7 +212,7 @@ This is a sentence with some **bold text**, some *italic text* and an
 stop and show visual editor here
 :::
 
-## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
+## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
 
 With or without the visual editor...
 
@@ -270,7 +269,7 @@ With or without the visual editor...
 :::
 :::
 
-## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
+## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
 
 -   Investigate `Intro_to_Python.ipynb` (*Hint*: Can you open it?)
 
@@ -290,7 +289,7 @@ python -m pip install -U pip (rstudio cloud has pip)
 python -m pip install -U matplotlib
 :::
 
-## Don't like RStudio? 
+## Don't like RStudio?
 
 ![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="395"}
 
@@ -302,7 +301,7 @@ python -m pip install -U matplotlib
 
 ![](images/knitOutput.png){style="margin-top: 20px;" fig-alt="illustration of brown hedgehod wearing a yellow knitted beanie knitting a turquoise scarf surrounded by possible output options such as pdf and word doc" width="850"}
 
-## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
+## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
 
 -   `quarto create-project mybook --type=book`
 
@@ -310,9 +309,8 @@ python -m pip install -U matplotlib
 
 -   `quarto render mybook/`
 
-```{=html}
 <!-- -->
-```
+
 -   Peep the `_quarto.yml` file and PDF output
 
 ::: notes
@@ -359,7 +357,7 @@ I live on this website: https://www.w3schools.com/cssref/default.asp
 
 ## Awesome Quarto `r fontawesome::fa("search")` {.center}
 
-[![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png){fig-align="center" width="291"}](https://github.com/mcanouil/awesome-quarto)
+[![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png){style="width: 20pt;" fig-align="center" width="291"}](https://github.com/mcanouil/awesome-quarto)
 
 ::: callout-tip
 ## Pro-Tip
@@ -377,7 +375,8 @@ I live on this website: https://www.w3schools.com/cssref/default.asp
 
 ![](images/qmd_render_schema.png){style="margin-bottom: -40px; position: absolute; bottom: -.10px;" fig-alt="illustration of quarto's rendering process" fig-align="center" width="7547"}
 
-## Extra Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
+::: notes
+Extra Your Turn `r fontawesome::fa("location-arrow")`
 
 -   Clone a GitHub wiki of your choice (but ideally a new example because this is a weird process)
 
@@ -393,6 +392,5 @@ I live on this website: https://www.w3schools.com/cssref/default.asp
 
 -   Commit and push changes
 
-::: notes
 https://gist.github.com/z3tt/3dab3535007acf108391649766409421
 :::

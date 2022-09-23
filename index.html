@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.251">
 <title>index</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -18,10 +18,15 @@
 <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -391,13 +396,13 @@
 <div class="footer center" style="width: 80%;">
 <p>Content is a mixture of [RStudio Education materials](https://github.com/rstudio-education), CC-BY. All art (unless otherwise noted) is by [Desirée De Leon](https://desiree.rbind.io/) and [Allison Horst](https://www.allisonhorst.com/), CC-BY-NC-ND.</p>
 </div>
-</section><section id="section-1" class="slide level2 center"><h2><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 468V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v176.4l195.5-181C352.1 22.3 384 36.6 384 64v384c0 27.4-31.9 41.7-52.5 24.6L136 292.7V468c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12z"></path></svg></h2>
+<aside class="notes"><p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 468V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v176.4l195.5-181C352.1 22.3 384 36.6 384 64v384c0 27.4-31.9 41.7-52.5 24.6L136 292.7V468c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12z"></path></svg></p>
 <p>How are we on installations?</p>
 <p>Tour of RStudio IDE</p>
-<aside class="notes"><p>I highly recommend you sign up for a&nbsp;<a href="https://rstudio.cloud/plans/free" title="https://rstudio.cloud/plans/free">free RStudio cloud account</a> for this workshop to avoid installation issues. You can always work to recreate materials on your local machine later on.&nbsp;If you choose the cloud route, that's all you need. All installations will follow as needed.</p>
+<p>I highly recommend you sign up for a&nbsp;<a href="https://rstudio.cloud/plans/free" title="https://rstudio.cloud/plans/free">free RStudio cloud account</a> for this workshop to avoid installation issues. You can always work to recreate materials on your local machine later on.&nbsp;If you choose the cloud route, that’s all you need. All installations will follow as needed.</p>
 <p>&nbsp;</p>
 <p>If you prefer your local machine, please install&nbsp;<a href="https://quarto.org/docs/get-started/" title="https://quarto.org/docs/get-started/">quarto</a>, R packages ggplot2, knitr, rmarkdown, skimr, survival, tidyverse (via `install.packages(c())`),&nbsp;<a href="https://www.python.org/downloads/" title="https://www.python.org/downloads/">Python</a> and python package&nbsp;<a href="https://matplotlib.org/stable/users/installing/index.html" title="https://matplotlib.org/stable/users/installing/index.html">matplotlib</a>.</p>
-<p>^^ There are probably things I'm forgetting so add to this list as needed</p>
+<p>^^ There are probably things I’m forgetting so add to this list as needed</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -412,8 +417,8 @@
 <blockquote>
 <p>Quarto® is an open-source scientific and technical publishing system built to dramatically improve the process of creating and collaborating</p>
 </blockquote>
-<p><img data-src="images/horst_quarto_schematic.png" alt="Graphic showing R, Python, Julia, and Observable languages flowing to Quarto and then on to html, PDF, and MS Word documents"></p>
-<aside class="notes"><p>lowering the activation energy to reproducible reporting in MANY ways</p>
+
+<img data-src="images/horst_quarto_schematic.png" alt="Graphic showing R, Python, Julia, and Observable languages flowing to Quarto and then on to html, PDF, and MS Word documents" class="r-stretch"><aside class="notes"><p>lowering the activation energy to reproducible reporting in MANY ways</p>
 <p>I think it’s totally appropriate to stop here and ask how folks feel about the term open/reproducible</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -425,10 +430,10 @@
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside></section><section id="section-2" class="slide level2"><h2></h2>
+      }</style></aside></section><section id="section-1" class="slide level2"><h2></h2>
 <p>Quarto documents, and other <strong>“literate programming”</strong> documents such as <code>.rmd</code> and <code>.ipynb</code>, include code, prose, and results in a single human-readable file</p>
-<p><img data-src="images/rmarkdown_wizards.png" style="margin-top: -10px;" width="800"></p>
-<aside class="notes"><p>same here! stop and ask folks how they feel about the term literate programming</p>
+
+<img data-src="images/rmarkdown_wizards.png" style="margin-top: -10px;" width="800" class="r-stretch"><aside class="notes"><p>same here! stop and ask folks how they feel about the term literate programming</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -441,7 +446,7 @@
           display:block!important;
       }</style></aside></section><section id="change-your-mental-model" class="slide level2"><h2>Change your mental model</h2>
 
-<img data-src="images/drakeMeme.jpeg" alt="drake meme shaking head at copy/paste and encouraging source -> output models" class="r-stretch quarto-figure-center"></section><section id="your-turn" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+<img data-src="images/drakeMeme.jpeg" alt="drake meme shaking head at copy/paste and encouraging source -> output models" class="r-stretch quarto-figure-center"></section><section id="live-demo" class="slide level2 your-turn"><h2>Live Demo <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
 <li>Clone <code>https://github.com/hidyverse/quarto-examples</code> to RStudio</li>
@@ -460,7 +465,7 @@
 </div>
 <div class="callout-content">
 <ul>
-<li><p>“Preview in Viewer Pane”</p></li>
+<li><p>“Preview in Viewer Pane” vs “Window”</p></li>
 <li><p>If you’re not new to these concepts, feel free to be flexible with these directions! Comfy outside of RStudio? Give VSCode a try.</p></li>
 <li><p>RStudio <em>should</em> tell you when something needs to be installed…pay close attention!</p></li>
 </ul>
@@ -534,10 +539,10 @@
 </div>
 </div>
 </div>
-</section><section id="your-turn-1" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+</section><section id="live-demo-1" class="slide level2 your-turn"><h2>Live Demo <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
-<li><p>Update the YAML header of <code>index.qmd</code> to add a Table of Contents</p></li>
+<li><p>Update the YAML header of <code>Intro_to_Quarto.qmd</code> to add a Table of Contents</p></li>
 <li><p>Add links for the included code</p></li>
 </ul>
 <div class="callout callout-tip callout-captioned callout-style-default">
@@ -573,8 +578,8 @@
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu"># Heading 1</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>This is a sentence with some **bold text**, some *italic text* and an </span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="al">![image](image.png)</span>{fig-alt="Alt text for this image"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><img data-src="images/markdown.png" width="496"></p>
-<div style="font-size: .8em">
+
+<img data-src="images/markdown.png" width="496" class="r-stretch"><div style="font-size: .8em">
 <p>^^ Check out <a href="https://commonmark.org/help/tutorial/">commonmark</a> for a tutorial on common markup languages!</p>
 </div>
 <aside class="notes"><p>stop and show visual editor here</p>
@@ -588,7 +593,7 @@
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside></section><section id="your-turn-2" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+      }</style></aside></section><section id="live-demo-2" class="slide level2 your-turn"><h2>Live Demo <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <p>With or without the visual editor…</p>
 <ul>
@@ -635,7 +640,7 @@
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-</section><section id="your-turn-3" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+</section><section id="live-demo-3" class="slide level2 your-turn"><h2>Live Demo <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
 <li><p>Investigate <code>Intro_to_Python.ipynb</code> (<em>Hint</em>: Can you open it?)</p></li>
@@ -665,7 +670,7 @@
 
 <img data-src="https://quarto.org/docs/computations/images/python-vscode.png" alt="A screenshot of a Quarto document rendered inside VSCode" width="395" class="r-stretch"></section><section id="nearly-limitless-output-formats" class="slide level2 center middle"><h2>Nearly limitless output formats</h2>
 
-<img data-src="images/knitOutput.png" style="margin-top: 20px;" alt="illustration of brown hedgehod wearing a yellow knitted beanie knitting a turquoise scarf surrounded by possible output options such as pdf and word doc" width="850" class="r-stretch"></section><section id="your-turn-4" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+<img data-src="images/knitOutput.png" style="margin-top: 20px;" alt="illustration of brown hedgehod wearing a yellow knitted beanie knitting a turquoise scarf surrounded by possible output options such as pdf and word doc" width="850" class="r-stretch"></section><section id="live-demo-4" class="slide level2 your-turn"><h2>Live Demo <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
 <li><p><code>quarto create-project mybook --type=book</code></p></li>
@@ -724,7 +729,7 @@
       }</style></aside></section><section id="awesome-quarto" class="slide level2 center"><h2>Awesome Quarto <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
 </h2>
 
-<img data-src="images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png" width="291" class="r-stretch quarto-figure-center"><div class="callout callout-tip callout-captioned callout-style-default">
+<img data-src="images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png" style="width: 20pt;" width="291" class="r-stretch quarto-figure-center"><div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -743,9 +748,11 @@
 <li><p>Learn about revealjs presentations in quarto from this <a href="https://github.com/hidyverse/quarto-reporting">slidedeck</a></p></li>
 <li><p>Send me feedback! <svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></svg><a href="https://tinyurl.com/y2sbf58r" class="uri">https://tinyurl.com/y2sbf58r</a></p></li>
 </ul>
-
-<img data-src="images/qmd_render_schema.png" alt="illustration of quarto's rendering process" width="7547" class="r-stretch quarto-figure-center"></section><section id="extra-your-turn" class="slide level2 your-turn"><h2>Extra Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
-</h2>
+<div class="quarto-figure quarto-figure-center" style="margin-bottom: -40px; position: absolute; bottom: -.10px;">
+<figure><p><img data-src="images/qmd_render_schema.png" alt="illustration of quarto's rendering process" width="7547"></p>
+</figure>
+</div>
+<aside class="notes"><p>Extra Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg></p>
 <ul>
 <li>
 <p>Clone a GitHub wiki of your choice (but ideally a new example because this is a weird process)</p>
@@ -763,7 +770,7 @@
 <li><p>Authenticate GitHub with {usethis}</p></li>
 <li><p>Commit and push changes</p></li>
 </ul>
-<aside class="notes"><p>https://gist.github.com/z3tt/3dab3535007acf108391649766409421</p>
+<p>https://gist.github.com/z3tt/3dab3535007acf108391649766409421</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1080,7 +1087,8 @@
       for (var i=0; i<noterefs.length; i++) {
         const ref = noterefs[i];
         tippyHover(ref, function() {
-          let href = ref.getAttribute('href');
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
