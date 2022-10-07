@@ -175,7 +175,7 @@ key: value
 
 -   Update the YAML header of `Intro_to_Quarto.qmd` to add a Table of Contents
 
--   Add links for the included code
+-   Fold your code! `r fontawesome::fa("paper-plane")`
 
 ::: callout-tip
 ## Hints
@@ -207,6 +207,8 @@ This is a sentence with some **bold text**, some *italic text* and an
 
 ::: notes
 stop and show visual editor here
+
+search "lung svg" then select images, cc licensed images, and use address url from image
 :::
 
 ## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
@@ -281,9 +283,13 @@ With or without the visual editor...
 ::: notes
 the python install is here and matplotlib...just keep pressing render until everything is installed and follow the prompts to install what is needed.
 
-python -m pip install -U pip (rstudio cloud has pip)
+python3 -m pip install jupyter
 
-python -m pip install -U matplotlib
+python3 -m pip install -U pip (rstudio cloud has pip)
+
+python3 -m pip install -U matplotlib
+
+something here?? https://stackoverflow.com/questions/28517937/how-can-i-upgrade-numpy
 :::
 
 ## Don't like RStudio?
@@ -300,11 +306,11 @@ python -m pip install -U matplotlib
 
 ## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
--   `quarto create-project mybook --type=book`
+-   `quarto create-project mysite --type website`
 
--   `quarto preview mybook/`
+-   `quarto preview mysite/`
 
--   `quarto render mybook/`
+-   `quarto render mysite/`
 
 <!-- -->
 
@@ -370,7 +376,7 @@ I live on this website: https://www.w3schools.com/cssref/default.asp
 
 -   Send me feedback! `r fontawesome::fa("comments")` <https://tinyurl.com/y2sbf58r>
 
-![](images/qmd_render_schema.png){fig-alt="illustration of quarto's rendering process" fig-align="center" style="margin-bottom: -40px; position: absolute; bottom: -.10px;" width="727"}
+![](images/qmd_render_schema.png){fig-alt="illustration of quarto's rendering process" fig-align="center" style="margin-bottom: -40px; position: absolute; bottom: -.10px;" width="566"}
 
 ::: notes
 Extra Your Turn `r fontawesome::fa("location-arrow")`

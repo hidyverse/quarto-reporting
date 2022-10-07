@@ -541,7 +541,7 @@
 </h2>
 <ul>
 <li><p>Update the YAML header of <code>Intro_to_Quarto.qmd</code> to add a Table of Contents</p></li>
-<li><p>Add links for the included code</p></li>
+<li><p>Fold your code! <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path></svg></p></li>
 </ul>
 <div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
@@ -581,6 +581,7 @@
 <p>^^ Check out <a href="https://commonmark.org/help/tutorial/">commonmark</a> for a tutorial on common markup languages!</p>
 </div>
 <aside class="notes"><p>stop and show visual editor here</p>
+<p>search “lung svg” then select images, cc licensed images, and use address url from image</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -650,8 +651,10 @@
 <li><p>Render <code>Intro_to_Python.qmd</code></p></li>
 </ul>
 <aside class="notes"><p>the python install is here and matplotlib…just keep pressing render until everything is installed and follow the prompts to install what is needed.</p>
-<p>python -m pip install -U pip (rstudio cloud has pip)</p>
-<p>python -m pip install -U matplotlib</p>
+<p>python3 -m pip install jupyter</p>
+<p>python3 -m pip install -U pip (rstudio cloud has pip)</p>
+<p>python3 -m pip install -U matplotlib</p>
+<p>something here?? https://stackoverflow.com/questions/28517937/how-can-i-upgrade-numpy</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -671,9 +674,9 @@
 <img data-src="images/knitOutput.png" style="margin-top: 20px;" alt="illustration of brown hedgehod wearing a yellow knitted beanie knitting a turquoise scarf surrounded by possible output options such as pdf and word doc" width="850" class="r-stretch"></section><section id="your-turn-4" class="slide level2 your-turn"><h2>Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
 </h2>
 <ul>
-<li><p><code>quarto create-project mybook --type=book</code></p></li>
-<li><p><code>quarto preview mybook/</code></p></li>
-<li><p><code>quarto render mybook/</code></p></li>
+<li><p><code>quarto create-project mysite --type website</code></p></li>
+<li><p><code>quarto preview mysite/</code></p></li>
+<li><p><code>quarto render mysite/</code></p></li>
 </ul>
 <!-- --><ul>
 <li>Peep the <code>_quarto.yml</code> file and PDF output</li>
@@ -747,7 +750,7 @@
 <li><p>Send me feedback! <svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></svg><a href="https://tinyurl.com/y2sbf58r" class="uri">https://tinyurl.com/y2sbf58r</a></p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center" style="margin-bottom: -40px; position: absolute; bottom: -.10px;">
-<figure><p><img data-src="images/qmd_render_schema.png" alt="illustration of quarto's rendering process" width="727"></p>
+<figure><p><img data-src="images/qmd_render_schema.png" alt="illustration of quarto's rendering process" width="566"></p>
 </figure>
 </div>
 <aside class="notes"><p>Extra Your Turn <svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg></p>
