@@ -73,12 +73,9 @@ same here! stop and ask folks how they feel about the term literate programming
 
 [![](images/drakeMeme.jpeg){fig-alt="drake meme shaking head at copy/paste and encouraging source -> output models" fig-align="center"}](https://twitter.com/ijeamaka_a/status/1367242513782763521)
 
-## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
+## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
 -   Clone `https://github.com/hidyverse/quarto-examples` to RStudio
-
-<!-- -->
-
 -   Open `Intro_to_Quarto.qmd`, and render `r fontawesome::fa("play")`
 
 ::: callout-tip
@@ -174,7 +171,7 @@ key: value
 :::
 :::
 
-## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
+## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
 -   Update the YAML header of `Intro_to_Quarto.qmd` to add a Table of Contents
 
@@ -212,7 +209,7 @@ This is a sentence with some **bold text**, some *italic text* and an
 stop and show visual editor here
 :::
 
-## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
+## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
 With or without the visual editor...
 
@@ -269,7 +266,7 @@ With or without the visual editor...
 :::
 :::
 
-## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
+## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
 -   Investigate `Intro_to_Python.ipynb` (*Hint*: Can you open it?)
 
@@ -301,7 +298,7 @@ python -m pip install -U matplotlib
 
 ![](images/knitOutput.png){style="margin-top: 20px;" fig-alt="illustration of brown hedgehod wearing a yellow knitted beanie knitting a turquoise scarf surrounded by possible output options such as pdf and word doc" width="850"}
 
-## Live Demo `r fontawesome::fa("location-arrow")` {.your-turn}
+## Your Turn `r fontawesome::fa("location-arrow")` {.your-turn}
 
 -   `quarto create-project mybook --type=book`
 
@@ -357,7 +354,7 @@ I live on this website: https://www.w3schools.com/cssref/default.asp
 
 ## Awesome Quarto `r fontawesome::fa("search")` {.center}
 
-[![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png){style="width: 20pt;" fig-align="center" width="291"}](https://github.com/mcanouil/awesome-quarto)
+[![](images/Screen%20Shot%202022-08-26%20at%2012.49.09%20PM.png){style="size: .5;" fig-align="center" width="291"}](https://github.com/mcanouil/awesome-quarto)
 
 ::: callout-tip
 ## Pro-Tip
@@ -373,7 +370,7 @@ I live on this website: https://www.w3schools.com/cssref/default.asp
 
 -   Send me feedback! `r fontawesome::fa("comments")` <https://tinyurl.com/y2sbf58r>
 
-![](images/qmd_render_schema.png){style="margin-bottom: -40px; position: absolute; bottom: -.10px;" fig-alt="illustration of quarto's rendering process" fig-align="center" width="7547"}
+![](images/qmd_render_schema.png){fig-alt="illustration of quarto's rendering process" fig-align="center" style="margin-bottom: -40px; position: absolute; bottom: -.10px;" width="727"}
 
 ::: notes
 Extra Your Turn `r fontawesome::fa("location-arrow")`
